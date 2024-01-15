@@ -49,7 +49,7 @@ describe('API Products Test SUite', ()=>{
             price: 70
         }
         const data = await makeRequest(`${BASE_URL}/products`, input)
-        deepStrictEqual(data.category, "regular")
+        deepStrictEqual(data.category, "regular2")
     });
 
     it('it should create a basic product', async () => {
