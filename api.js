@@ -63,7 +63,7 @@ async function handler(request, response) {
 
   if (!validateHeaders(request.headers)) {
     response.writeHead(401)
-    return response.end("invalid token!")
+    return response.end("Invalid token!")
   }
 
   if(request.url == '/products' && request.method == "POST") {
@@ -71,7 +71,7 @@ async function handler(request, response) {
   }
 
   response.writeHead(404)
-  response.end('not found!')
+  response.end('Not found!')
 }
 
 const app = createServer(handler)
